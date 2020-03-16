@@ -15,9 +15,9 @@ Once we have the lines we'll discern which could be related the the left lane an
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-The most critical shortcoming of this lane finder pipeline is the fact that the slope of the lane line is derived from averaging all hough lines. This makes the most important variable (the slope) vulnerable to outliers such as horizon lines being captured by our hough lines algorithm that have slopes close to but not zero.  
+The hough lines function parameters and the slope filter function are two critical variables to the final result that are both hand tuned from testing on a small sample of images. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-Finding a way to detect and filter out horizon line slopes in the slopes array so they don't affect calculating the slope of the lane line
+The pipeline would be much more accurate if the main parameters of the function could be chosen automatically from testing on thousands of images. Using a loss function to judge improvement over time. 
