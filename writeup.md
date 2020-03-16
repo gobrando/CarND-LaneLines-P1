@@ -1,12 +1,8 @@
 # **Finding Lane Lines Writeup 
 
----
-
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
-
-### Reflection
 
 ### 1. The Pipeline
 
